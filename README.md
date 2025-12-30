@@ -17,7 +17,7 @@ Fuzzy find and grep in Yazi using ripgrep and fzf. This plugin provides an inter
 Install the plugin via the package manager:
 
 ```bash
-ya pkg add XYenon/yafg
+ya pkg add Rossettaylm/yafg
 ```
 
 This clones the repository, adds it to `~/.config/yazi/package.toml`, and pins the current revision.
