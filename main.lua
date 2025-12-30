@@ -84,7 +84,7 @@ function M.run_with(cwd)
 	local target_dir = ya.quote(tostring(cwd))
 	local cmd_args = string.format([=[
         export TARGET_DIR=%s
-        export RG_PREFIX='rg --no-ignore --column --line-number --no-heading --color=always --smart-case'
+        export RG_PREFIX='rg --no-ignore --glob "!.git" --column --line-number --no-heading --color=always --smart-case'
         PREVIEW='bat --color=always --highlight-line={2} {1}'
         fzf --ansi --disabled --multi \
             --bind "start:reload:${RG_PREFIX} {q} ${TARGET_DIR}" \
